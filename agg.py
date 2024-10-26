@@ -46,12 +46,12 @@ def save_file_content(folder_path, file_content, base_path, file_extensions, out
                     # Check if all required metadata fields are present
                     if all(key in metadata for key in ['file_name', 'project_name', 'creation_time', 'version', 'description', 'file_size']):
                         continue
-            except json.JSONDecodeError as e:
-                print(f"JSON decoding error while reading file {item_path}: {e}")
-                continue
+            # except json.JSONDecodeError as e:
+            #     print(f"JSON decoding error while reading file {item_path}: {e}")
+            #     continue
             except Exception as e:
-                print(f"Error reading metadata from file {item_path}: {e}")
-                continue
+                # print(f"Error reading metadata from file {item_path}: {e}")
+                pass
 
         if os.path.isdir(item_path):
             # Recursively process subfolders
