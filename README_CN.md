@@ -39,13 +39,13 @@ pip install chardet
 运行脚本并仅保存 Python 文件（`.py`）：
 
 ```sh
-python script.py /path/to/folder .py
+python agg.py /path/to/folder .py
 ```
 
 运行脚本，包含 `.txt` 和 `.log` 文件，并指定输出文件：
 
 ```sh
-python script.py /path/to/folder .txt .log -o /path/to/output/content.json
+python agg.py /path/to/folder .txt .log -o /path/to/output/content.json
 ```
 
 ### 输出
@@ -74,14 +74,14 @@ python script.py /path/to/folder .txt .log -o /path/to/output/content.json
 ### 将 Python 文件保存到默认输出
 
 ```sh
-python script.py /project/folder
+python agg.py /project/folder
 ```
 该命令会将 `/project/folder` 中所有 `.py` 文件的内容保存到以时间戳命名的 JSON 文件中，存放在 `/project/folder` 目录下。
 
 ### 保存多种文件类型并指定输出路径
 
 ```sh
-python script.py /project/folder .txt .log -o /project/folder/output_content.json
+python agg.py /project/folder .txt .log -o /project/folder/output_content.json
 ```
 该命令会将 `/project/folder` 中的所有 `.txt` 和 `.log` 文件的内容保存到 `/project/folder/output_content.json` 中。
 

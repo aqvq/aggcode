@@ -25,13 +25,13 @@ The script can be executed from the command line using Python. It requires a fol
 ### Example Commands
 ```sh
 # Save content of all .py files in the current directory
-python file_saver.py . .py
+python agg.py . .py
 
 # Save content of .txt and .md files in the folder '/path/to/folder'
-python file_saver.py /path/to/folder .txt .md
+python agg.py /path/to/folder .txt .md
 
 # Save content of .py files and specify an output file
-python file_saver.py /path/to/folder .py -o /path/to/output/content.json
+python agg.py /path/to/folder .py -o /path/to/output/content.json
 ```
 
 ### Metadata Description
