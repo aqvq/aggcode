@@ -1,7 +1,8 @@
-# File Content Saver Script
+# Code Aggregation Tool
 
 ## Overview
-This script is designed to recursively scan a specified folder, read the content of files with specific extensions, and save all the gathered data into a JSON file. This tool is particularly useful for archiving or backing up the content of scripts, project files, or any other types of text-based files.
+This script is designed to recursively scan a specified folder, read the content of files with specific extensions, and save all the gathered data into a JSON file. This tool is used to aggregate the code of a project into a json file for questioning chatgpt.
+
 
 The output file contains a JSON representation of the content of each eligible file, organized with metadata that provides details like project name, creation time, and description. The description can be sourced from a `README.md` or `README` file if present in the folder.
 
